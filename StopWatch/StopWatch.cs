@@ -1,13 +1,13 @@
 using System;
 
-namespace StopWatch
+namespace Ex.StopWatch
 {
-    public class Watch
+    public class StopWatch
     {
         private bool IsRunning { get; set; }
-        public TimeSpan Timer { get; set; }
+        public TimeSpan Timer { get; private set; }
 
-        public Watch()
+        public StopWatch()
         {
             this.IsRunning = false;
             this.Timer = new TimeSpan();
